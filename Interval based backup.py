@@ -136,7 +136,7 @@ def Repeat():
     log.close()
 
 if __name__ =="__main__":
-    delay=float(input("delay in hrs"))
+    delay=float(input("delay in hrs (accepts float values)"))
     while(True):
         try:
             Repeat()
