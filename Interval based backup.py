@@ -70,7 +70,7 @@ def Repeat():
     tt=time.localtime(time.time())
     log.write(str(tt.tm_mday)+'/'+str(tt.tm_mon)+'/'+str(tt.tm_year)+" " +str(tt.tm_hour)
               + ':'+ str(tt.tm_min)+':'+str(tt.tm_sec)+" backup successful "+os.getcwd()+"\n")
-    log.close()def Repeat():
+    log.close()
     
 
 if __name__ =="__main__":
