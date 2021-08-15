@@ -30,9 +30,7 @@ def Repeat():
     service = build('drive', 'v3', credentials=creds)
     parent= ['1ycfRqVRu7dzhJ31WQue9XEPqlO8GUTT-']
     folder=os.listdir(os.getcwd())
-    mimefol=[]
-    for i in range(len(folder)):
-        mimefol.append(mimetypes.guess_type(folder[i]))
+    
     obj1=service.files().list(q="'1ycfRqVRu7dzhJ31WQue9XEPqlO8GUTT-' in parents and trashed != True").execute().get('files',[])
 
     dest=[0,0]
